@@ -1,6 +1,6 @@
 FROM alpine as builder
-ARG version=21.02.3
-ARG base=https://archive.openwrt.org/releases/
+ARG version=22.03.0-rc4
+ARG base=https://downloads.openwrt.org/releases/
 ARG file=openwrt-${version}-x86-64-rootfs.tar.gz
 ARG downloadUrl=${base}${version}/targets/x86/64/${file}
 RUN wget ${downloadUrl} -O openwrt-x86-64-rootfs.tar.gz
